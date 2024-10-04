@@ -1,0 +1,100 @@
+
+
+
+
+I have a directory full of JSON files. The file names are 5 digit numbers. The JSON is nested, and I've provided 2 examples below. I need 2 python functions:
+
+#1 Function that iterates over all JSON files in a provided directory. This function should tkae a string as a parameter, and the string will be the directory to iterate over. 
+#2  Function that, for each file in the #1 function, does the following:
+    1. Checks to see which fields are single value vs array vs object and array.
+    2. For single value fields, add the value to a dataframe called tblIndividual
+    3. For array only fields, add the values to a dataframe called tbl + field name. (i.e. in the example, the "remarks" field would result in tblRemarks dataframe)
+    4. For object and array fields, add the values to a dataframe called tbl + field name
+    5. For all dataframes, include a column called fkID. The value in this field, for all rows, should be the file name of the JSON, without the file extension.
+    6. Field names might be missing from some files, and present in others. See example below, where "color" is missing from File2.json, but is present in File1.json
+
+Please show the code for both functions. Comment the code to explain each line as if the user has no idea how it works.
+Please also show the tables that would be output if the functions were run against each of the 2 example JSON files below. Assume example files are named File1.json and File2.json.
+
+
+File1.json:
+[{
+    "first_name": "Smith",
+    "last_name": "Lampke",
+    "email": null,
+    "gender": "Male",
+    "color": "Orange",
+    "remarks": [
+      "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
+      "Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+      "Morbi quis tortor id nulla ultrices aliquet."
+    ],
+    "associations": {
+      "individual": [
+        "ind_44444",
+        "ind_33333",
+        "ind_55555",
+        "ind_11111"
+      ],
+      "country": [
+        "ctry_55555",
+        "ctry_44444",
+        "ctry_11111"
+      ],
+      "document": [
+        "doc_11111",
+        "doc_33333",
+        "doc_22222"
+      ],
+      "organization": [
+        "org_55555",
+        "org_44444",
+        "org_22222"
+      ]
+    }
+  }]
+
+
+File2.json
+[{
+    "first_name": "Lanny",
+    "last_name": "Woolerton",
+    "email": [
+      "lwoolerton0@symantec.com",
+      "lwoolerton0@naver.com"
+    ],
+    "gender": "Male",
+    "remarks": [
+      "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
+      "Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis."
+    ],
+    "associations": {
+      "individual": [
+        "ind_33333",
+        "ind_55555",
+        "ind_22222",
+        "ind_11111"
+      ],
+      "country": [
+        "ctry_33333",
+        "ctry_11111",
+        "ctry_55555"
+      ],
+      "document": [
+        "doc_33333",
+        "doc_44444",
+        "doc_11111"
+      ],
+      "organization": [
+        "org_55555",
+        "org_11111",
+        "org_44444"
+      ]
+    }
+  }]
+  
+
+
+  Ok, very good. Two small issues:
+  Regarding the potential for some fields to be (or not be) present

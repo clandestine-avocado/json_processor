@@ -1,0 +1,32 @@
+{
+    "first_name": "FirstName_0",
+    "last_name": "LastName_0",
+    "email": [
+        "email0@example.com",
+        "email0_alt@example.com"
+    ],
+    "gender": "Female",
+    "color": "Blue",
+    "remarks": [
+        "Remark 0 for person 0",
+        "Remark 1 for person 0"
+    ],
+    "associations": {
+        "individual": [
+            "ind_16203",
+            "ind_76877"
+        ],
+        "country": [
+            "cou_68095"
+        ],
+        "organization": [
+            "org_40237",
+            "org_87740",
+            "org_85271"
+        ]
+    },
+    "marital_status": "Sample_marital_status_0",
+    "hobbies": [
+        "Item_0"
+    ]
+}

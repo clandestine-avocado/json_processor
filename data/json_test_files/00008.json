@@ -1,0 +1,33 @@
+{
+    "first_name": "FirstName_7",
+    "last_name": "LastName_7",
+    "email": [
+        "email7@example.com",
+        "email7_alt@example.com"
+    ],
+    "gender": "Other",
+    "color": "Yellow",
+    "remarks": [
+        "Remark 0 for person 7",
+        "Remark 1 for person 7"
+    ],
+    "associations": {
+        "individual": [
+            "ind_81339",
+            "ind_46131",
+            "ind_89838"
+        ],
+        "country": [
+            "cou_24069"
+        ],
+        "organization": [
+            "org_93989",
+            "org_48313",
+            "org_54105",
+            "org_28122"
+        ]
+    },
+    "associations.city": [
+        "Item_0"
+    ]
+}

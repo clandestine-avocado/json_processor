@@ -1,0 +1,10 @@
+{
+  "id": 6,
+  "name": "Eva Wilson",
+  "age": 22,
+  "city": "Miami",
+  "education": {
+    "degree": "Bachelor",
+    "major": "Computer Science"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "first_name": "FirstName_1",
+    "last_name": "LastName_1",
+    "email": [
+        "email1@example.com",
+        "email1_alt@example.com"
+    ],
+    "gender": "Male",
+    "color": "Blue",
+    "associations": {
+        "individual": [
+            "ind_72847",
+            "ind_26045"
+        ],
+        "country": [
+            "cou_88013",
+            "cou_40176",
+            "cou_64450",
+            "cou_56768"
+        ],
+        "organization": [
+            "org_84123",
+            "org_44598",
+            "org_76020"
+        ]
+    },
+    "address": "Sample_address_1",
+    "occupation": "Sample_occupation_1"
+}

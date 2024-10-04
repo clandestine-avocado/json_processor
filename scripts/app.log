@@ -1,0 +1,14 @@
+2024-10-01 19:42:33,338 - ERROR - Error processing file C:\Users\kroy2\Documents\python\projects\json_processor\data\12345.json: Invalid control character at: line 29 column 24 (char 1079)
+2024-10-01 19:42:33,339 - INFO - Processing file: C:\Users\kroy2\Documents\python\projects\json_processor\data\67890.json
+2024-10-01 19:42:33,339 - INFO - Processed individual data for file with fkID 67890.
+2024-10-01 19:42:33,339 - INFO - Processed remarks for file with fkID 67890.
+2024-10-01 19:42:33,339 - INFO - Processed association individual for file with fkID 67890.
+2024-10-01 19:42:33,339 - INFO - Processed association country for file with fkID 67890.
+2024-10-01 19:42:33,339 - INFO - Processed association document for file with fkID 67890.
+2024-10-01 19:42:33,339 - INFO - Processed association organization for file with fkID 67890.
+2024-10-01 19:42:39,004 - INFO - CSV for tblIndividual created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblIndividual.csv
+2024-10-01 19:42:39,020 - INFO - CSV for tblRemarks created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblRemarks.csv
+2024-10-01 19:42:39,023 - INFO - CSV for tblAssociatedIndividual created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedIndividual.csv
+2024-10-01 19:42:39,025 - INFO - CSV for tblAssociatedCountry created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedCountry.csv
+2024-10-01 19:42:39,028 - INFO - CSV for tblAssociatedDocument created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedDocument.csv
+2024-10-01 19:42:39,030 - INFO - CSV for tblAssociatedOrganization created at: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedOrganization.csv

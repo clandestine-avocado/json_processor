@@ -1,0 +1,2 @@
+file_name,file_path,field_names,first_name,last_name,email,gender,color,remarks,associations.individual,associations.country,associations.organization,hobbies,address,phone
+00036.json,C:\Users\kroy2\Documents\python\projects\json_processor\json_test_files2\00036.json,"address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, phone, remarks",FirstName_35,LastName_35,Array[2],Other,Green,Array[3],Array[1],Array[3],Array[5],Array[1],Sample_address_35,Sample_phone_35

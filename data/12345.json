@@ -1,0 +1,38 @@
+{
+    "first_name": "Lanny",
+    "last_name": "Woolerton",
+    "email": [
+        "lwoolerton0@symantec.com",
+        "lwoolerton0@naver.com"
+    ],
+    "gender": "Male",
+    "color": "Indigo",
+    "remarks": [
+        "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
+        "Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis."
+    ],
+    "associations": {
+        "individual": [
+            "ind_33333",
+            "ind_55555",
+            "ind_22222",
+            "ind_11111"
+        ],
+        "country": [
+            "ctry_33333",
+            "ctry_11111",
+            "ctry_55555"
+        ],
+        "document": [
+            "doc_33333",
+            "doc_44444",
+            "doc_11111"
+        ],
+        "organization": [
+            "org_55555",
+            "org_11111",
+            "org_44444"
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "first_name": "FirstName_8",
+    "last_name": "LastName_8",
+    "email": [
+        "email8@example.com",
+        "email8_alt@example.com"
+    ],
+    "gender": "Female",
+    "color": "Blue",
+    "remarks": [
+        "Remark 0 for person 8",
+        "Remark 1 for person 8",
+        "Remark 2 for person 8"
+    ],
+    "associations": {
+        "individual": [
+            "ind_36522",
+            "ind_89663",
+            "ind_13537",
+            "ind_77735"
+        ],
+        "country": [
+            "cou_67824"
+        ],
+        "organization": [
+            "org_20084",
+            "org_75963",
+            "org_94187",
+            "org_18711"
+        ]
+    },
+    "marital_status": "Sample_marital_status_8",
+    "occupation": "Sample_occupation_8"
+}

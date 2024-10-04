@@ -1,0 +1,10 @@
+{
+  "id": 16,
+  "name": "Olivia Davis",
+  "age": 23,
+  "city": "Philadelphia",
+  "allergies": [
+    "peanuts",
+    "shellfish"
+  ]
+}

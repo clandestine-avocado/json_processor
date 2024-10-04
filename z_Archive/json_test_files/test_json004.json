@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "name": "Alice Brown",
+  "city": "Chicago",
+  "hobbies": [
+    "reading",
+    "painting"
+  ]
+}

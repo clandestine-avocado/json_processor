@@ -1,0 +1,178 @@
+JSON Files Analysis Report
+Total files analyzed: 50
+
+Field Frequency:
+  gender: 50 (100.00%)
+  associations.individual: 50 (100.00%)
+  associations.country: 50 (100.00%)
+  last_name: 50 (100.00%)
+  associations.organization: 50 (100.00%)
+  first_name: 50 (100.00%)
+  email: 50 (100.00%)
+  color: 42 (84.00%)
+  remarks: 41 (82.00%)
+  address: 14 (28.00%)
+  hobbies: 13 (26.00%)
+  associations.city: 13 (26.00%)
+  phone: 11 (22.00%)
+  marital_status: 9 (18.00%)
+  occupation: 9 (18.00%)
+  age: 9 (18.00%)
+
+Missing Fields:
+
+Extra Fields:
+  00001.json: marital_status, remarks, color, hobbies
+  00002.json: color, address, occupation
+  00003.json: occupation, color
+  00004.json: color, associations.city, phone, remarks
+  00049.json: color, associations.city, phone, remarks
+  00005.json: marital_status, remarks, color
+  00021.json: marital_status, remarks, color
+  00006.json: color, address, occupation, remarks
+  00007.json: color, age, address, remarks
+  00037.json: color, age, address, remarks
+  00008.json: color, associations.city, remarks
+  00012.json: color, associations.city, remarks
+  00031.json: color, associations.city, remarks
+  00033.json: color, associations.city, remarks
+  00046.json: color, associations.city, remarks
+  00009.json: occupation, color, remarks, marital_status
+  00010.json: address, occupation, remarks, marital_status, color
+  00011.json: occupation, remarks, color
+  00013.json: occupation, remarks, color
+  00025.json: occupation, remarks, color
+  00035.json: occupation, remarks, color
+  00014.json: phone, associations.city, remarks, marital_status, color
+  00015.json: address, remarks, hobbies
+  00016.json: color, address, remarks, hobbies
+  00023.json: color, address, remarks, hobbies
+  00017.json: phone, address, remarks
+  00018.json: remarks
+  00029.json: remarks
+  00019.json: color
+  00030.json: color
+  00041.json: color
+  00020.json: color, associations.city, age, remarks
+  00022.json: color, address, remarks
+  00024.json: color, address, remarks
+  00026.json: phone, remarks
+  00027.json: color, associations.city, hobbies
+  00028.json: color, associations.city, remarks, marital_status
+  00032.json: address, phone, remarks, marital_status, color
+  00034.json: color, age, remarks, hobbies
+  00047.json: color, age, remarks, hobbies
+  00036.json: address, hobbies, phone, remarks, color
+  00038.json: color, remarks, hobbies
+  00039.json: phone, remarks, hobbies
+  00040.json: age, remarks, hobbies
+  00042.json: color, hobbies
+  00043.json: phone, remarks, marital_status, color, age
+  00044.json: phone, age, color
+  00045.json: color, associations.city, phone
+  00048.json: color, associations.city, remarks, hobbies
+  00050.json: address, age, remarks
+
+File Grouping:
+  Group 1 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, marital_status, remarks
+    Files: 00001.json
+  Group 2 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, occupation
+    Files: 00002.json
+  Group 3 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, occupation
+    Files: 00003.json
+  Group 4 (2 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, phone, remarks
+    Files: 00004.json, 00049.json
+  Group 5 (2 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, remarks
+    Files: 00005.json, 00021.json
+  Group 6 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, occupation, remarks
+    Files: 00006.json
+  Group 7 (2 files):
+    Fields: address, age, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, remarks
+    Files: 00007.json, 00037.json
+  Group 8 (5 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, remarks
+    Files: 00008.json, 00012.json, 00031.json, 00033.json, 00046.json
+  Group 9 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, occupation, remarks
+    Files: 00009.json
+  Group 10 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, occupation, remarks
+    Files: 00010.json
+  Group 11 (4 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, occupation, remarks
+    Files: 00011.json, 00013.json, 00025.json, 00035.json
+  Group 12 (1 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, phone, remarks
+    Files: 00014.json
+  Group 13 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00015.json
+  Group 14 (2 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00016.json, 00023.json
+  Group 15 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, email, first_name, gender, last_name, phone, remarks
+    Files: 00017.json
+  Group 16 (2 files):
+    Fields: associations.country, associations.individual, associations.organization, email, first_name, gender, last_name, remarks
+    Files: 00018.json, 00029.json
+  Group 17 (3 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name
+    Files: 00019.json, 00030.json, 00041.json
+  Group 18 (1 files):
+    Fields: age, associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, remarks
+    Files: 00020.json
+  Group 19 (2 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, remarks
+    Files: 00022.json, 00024.json
+  Group 20 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, email, first_name, gender, last_name, phone, remarks
+    Files: 00026.json
+  Group 21 (1 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name
+    Files: 00027.json
+  Group 22 (1 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, remarks
+    Files: 00028.json
+  Group 23 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, phone, remarks
+    Files: 00032.json
+  Group 24 (2 files):
+    Fields: age, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00034.json, 00047.json
+  Group 25 (1 files):
+    Fields: address, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, phone, remarks
+    Files: 00036.json
+  Group 26 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00038.json
+  Group 27 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, email, first_name, gender, hobbies, last_name, phone, remarks
+    Files: 00039.json
+  Group 28 (1 files):
+    Fields: age, associations.country, associations.individual, associations.organization, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00040.json
+  Group 29 (1 files):
+    Fields: associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name
+    Files: 00042.json
+  Group 30 (1 files):
+    Fields: age, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, marital_status, phone, remarks
+    Files: 00043.json
+  Group 31 (1 files):
+    Fields: age, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, phone
+    Files: 00044.json
+  Group 32 (1 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, last_name, phone
+    Files: 00045.json
+  Group 33 (1 files):
+    Fields: associations.city, associations.country, associations.individual, associations.organization, color, email, first_name, gender, hobbies, last_name, remarks
+    Files: 00048.json
+  Group 34 (1 files):
+    Fields: address, age, associations.country, associations.individual, associations.organization, email, first_name, gender, last_name, remarks
+    Files: 00050.json

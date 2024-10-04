@@ -1,0 +1,31 @@
+{
+    "first_name": "FirstName_4",
+    "last_name": "LastName_4",
+    "email": [
+        "email4@example.com",
+        "email4_alt@example.com"
+    ],
+    "gender": "Male",
+    "color": "Green",
+    "remarks": [
+        "Remark 0 for person 4",
+        "Remark 1 for person 4",
+        "Remark 2 for person 4"
+    ],
+    "associations": {
+        "individual": [
+            "ind_96268",
+            "ind_52433",
+            "ind_75164",
+            "ind_22560"
+        ],
+        "country": [
+            "cou_44711",
+            "cou_95189"
+        ],
+        "organization": [
+            "org_44802"
+        ]
+    },
+    "marital_status": "Sample_marital_status_4"
+}

@@ -1,0 +1,35 @@
+{
+    "first_name": "FirstName_20",
+    "last_name": "LastName_20",
+    "email": [
+        "email20@example.com",
+        "email20_alt@example.com"
+    ],
+    "gender": "Male",
+    "color": "Green",
+    "remarks": [
+        "Remark 0 for person 20",
+        "Remark 1 for person 20",
+        "Remark 2 for person 20"
+    ],
+    "associations": {
+        "individual": [
+            "ind_86468",
+            "ind_92801",
+            "ind_56758",
+            "ind_20457"
+        ],
+        "country": [
+            "cou_82350",
+            "cou_37295",
+            "cou_39045"
+        ],
+        "organization": [
+            "org_70277",
+            "org_85942",
+            "org_78907",
+            "org_64471"
+        ]
+    },
+    "marital_status": "Sample_marital_status_20"
+}

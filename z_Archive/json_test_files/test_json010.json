@@ -1,0 +1,10 @@
+{
+  "id": 10,
+  "name": "Ivy Chen",
+  "age": 27,
+  "city": "Austin",
+  "pets": [
+    "dog",
+    "cat"
+  ]
+}

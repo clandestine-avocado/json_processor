@@ -1,0 +1,10 @@
+{
+  "id": 18,
+  "name": "Quinn Taylor",
+  "age": 30,
+  "city": "Detroit",
+  "car": {
+    "make": "Toyota",
+    "model": "Camry"
+  }
+}

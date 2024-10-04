@@ -1,0 +1,39 @@
+{
+    "first_name": "FirstName_48",
+    "last_name": "LastName_48",
+    "email": [
+        "email48@example.com",
+        "email48_alt@example.com"
+    ],
+    "gender": "Male",
+    "color": "Yellow",
+    "remarks": [
+        "Remark 0 for person 48",
+        "Remark 1 for person 48",
+        "Remark 2 for person 48"
+    ],
+    "associations": {
+        "individual": [
+            "ind_66976",
+            "ind_48625",
+            "ind_13555",
+            "ind_91310",
+            "ind_14977"
+        ],
+        "country": [
+            "cou_32731",
+            "cou_42671",
+            "cou_54111",
+            "cou_31102",
+            "cou_60925"
+        ],
+        "organization": [
+            "org_24632",
+            "org_18732"
+        ]
+    },
+    "associations.city": [
+        "Item_0"
+    ],
+    "phone": "Sample_phone_48"
+}

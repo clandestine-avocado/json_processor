@@ -1,0 +1,33 @@
+{
+    "first_name": "FirstName_44",
+    "last_name": "LastName_44",
+    "email": [
+        "email44@example.com",
+        "email44_alt@example.com"
+    ],
+    "gender": "Female",
+    "color": "Red",
+    "associations": {
+        "individual": [
+            "ind_88100",
+            "ind_88522"
+        ],
+        "country": [
+            "cou_71055",
+            "cou_17753",
+            "cou_82619"
+        ],
+        "organization": [
+            "org_76264",
+            "org_17458",
+            "org_61314",
+            "org_49985"
+        ]
+    },
+    "phone": "Sample_phone_44",
+    "associations.city": [
+        "Item_0",
+        "Item_1",
+        "Item_2"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "first_name": "FirstName_28",
+    "last_name": "LastName_28",
+    "email": [
+        "email28@example.com",
+        "email28_alt@example.com"
+    ],
+    "gender": "Male",
+    "remarks": [
+        "Remark 0 for person 28"
+    ],
+    "associations": {
+        "individual": [
+            "ind_47721"
+        ],
+        "country": [
+            "cou_97405",
+            "cou_26328",
+            "cou_32509"
+        ],
+        "organization": [
+            "org_52502"
+        ]
+    }
+}

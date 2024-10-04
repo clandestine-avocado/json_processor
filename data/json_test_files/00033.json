@@ -1,0 +1,37 @@
+{
+    "first_name": "FirstName_32",
+    "last_name": "LastName_32",
+    "email": [
+        "email32@example.com",
+        "email32_alt@example.com"
+    ],
+    "gender": "Female",
+    "color": "Green",
+    "remarks": [
+        "Remark 0 for person 32",
+        "Remark 1 for person 32"
+    ],
+    "associations": {
+        "individual": [
+            "ind_55159",
+            "ind_37252",
+            "ind_33182"
+        ],
+        "country": [
+            "cou_27794",
+            "cou_73538",
+            "cou_46477"
+        ],
+        "organization": [
+            "org_72764",
+            "org_59610",
+            "org_49877",
+            "org_78860",
+            "org_43707"
+        ]
+    },
+    "associations.city": [
+        "Item_0",
+        "Item_1"
+    ]
+}

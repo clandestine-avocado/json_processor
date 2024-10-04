@@ -1,0 +1,10 @@
+{
+  "id": 8,
+  "name": "Grace Lee",
+  "age": 33,
+  "city": "San Francisco",
+  "languages": [
+    "English",
+    "Mandarin"
+  ]
+}

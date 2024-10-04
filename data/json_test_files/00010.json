@@ -1,0 +1,30 @@
+{
+    "first_name": "FirstName_9",
+    "last_name": "LastName_9",
+    "email": [
+        "email9@example.com",
+        "email9_alt@example.com"
+    ],
+    "gender": "Other",
+    "color": "Blue",
+    "remarks": [
+        "Remark 0 for person 9"
+    ],
+    "associations": {
+        "individual": [
+            "ind_22280",
+            "ind_14725"
+        ],
+        "country": [
+            "cou_88470",
+            "cou_35827"
+        ],
+        "organization": [
+            "org_99732",
+            "org_82565"
+        ]
+    },
+    "marital_status": "Sample_marital_status_9",
+    "occupation": "Sample_occupation_9",
+    "address": "Sample_address_9"
+}

@@ -1,0 +1,70 @@
+2024-10-01 19:48:41,235 - INFO - Processing File: C:\Users\kroy2\Desktop\desktop.ini
+2024-10-01 19:48:41,235 - INFO - Processing File: C:\Users\kroy2\Desktop\Documents - Shortcut.lnk
+2024-10-01 19:48:41,235 - INFO - Processing File: C:\Users\kroy2\Desktop\Visual Studio Code.lnk
+2024-10-01 19:48:41,235 - INFO - CSV file created at C:\Users\kroy2\Desktop\directory_structure.csv
+2024-10-01 19:50:51,214 - INFO - Processing File: C:\Users\kroy2\Documents\bookmarks_1_8_24.html
+2024-10-01 19:50:51,214 - INFO - Processing File: C:\Users\kroy2\Documents\bookmarks_9_30_24.html
+2024-10-01 19:50:51,214 - INFO - Processing File: C:\Users\kroy2\Documents\Default.rdp
+2024-10-01 19:50:51,214 - INFO - Processing File: C:\Users\kroy2\Documents\desktop.ini
+2024-10-01 19:50:51,214 - INFO - Processing Directory: C:\Users\kroy2\Music
+2024-10-01 19:50:51,214 - ERROR - Failed to process directory C:\Users\kroy2\Documents\My Music: [WinError 5] Access is denied: 'C:\\Users\\kroy2\\Documents\\My Music'
+2024-10-01 19:50:51,229 - INFO - Processing Directory: C:\Users\kroy2\Pictures
+2024-10-01 19:50:51,231 - ERROR - Failed to process directory C:\Users\kroy2\Documents\My Pictures: [WinError 5] Access is denied: 'C:\\Users\\kroy2\\Documents\\My Pictures'
+2024-10-01 19:50:51,232 - INFO - Processing Directory: C:\Users\kroy2\Videos
+2024-10-01 19:50:51,233 - ERROR - Failed to process directory C:\Users\kroy2\Documents\My Videos: [WinError 5] Access is denied: 'C:\\Users\\kroy2\\Documents\\My Videos'
+2024-10-01 19:50:51,234 - INFO - Processing Directory: C:\Users\kroy2\Documents\python
+2024-10-01 19:50:51,236 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup
+2024-10-01 19:50:51,238 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\.vscode
+2024-10-01 19:50:51,240 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\.vscode\settings.json
+2024-10-01 19:50:51,241 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue
+2024-10-01 19:50:51,242 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\button_snap.py
+2024-10-01 19:50:51,242 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\check_mount.py
+2024-10-01 19:50:51,242 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\db.py
+2024-10-01 19:50:51,246 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\db2.py
+2024-10-01 19:50:51,247 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\db3.py
+2024-10-01 19:50:51,248 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\db_all.py
+2024-10-01 19:50:51,249 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\doorbell.h264
+2024-10-01 19:50:51,251 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\doorbell.jpg
+2024-10-01 19:50:51,253 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\passive_buzzer.py
+2024-10-01 19:50:51,256 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\pwm.py
+2024-10-01 19:50:51,258 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\pwm2.py
+2024-10-01 19:50:51,260 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\testfordoorbellfolder.txt
+2024-10-01 19:50:51,260 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\backbup_weird home issue\testing_mqtt_con_to_HA.py
+2024-10-01 19:50:51,261 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py
+2024-10-01 19:50:51,263 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py\1.0_button.py
+2024-10-01 19:50:51,265 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py\1.1_button_snap.py
+2024-10-01 19:50:51,266 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py\1.3_buzzer.py
+2024-10-01 19:50:51,269 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py\2.0_button_snap_buzz.py
+2024-10-01 19:50:51,270 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\doorbell py\2.1_button_snap_buzz.py
+2024-10-01 19:50:51,271 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\mjpg-streamer
+2024-10-01 19:50:51,273 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\mqtt
+2024-10-01 19:50:51,274 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\mqtt\snap_b64.py
+2024-10-01 19:50:51,275 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\mqtt\testingmqtt.py
+2024-10-01 19:50:51,275 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\Db3A backup\picam
+2024-10-01 19:50:51,275 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\picam\lo_hi_res.py
+2024-10-01 19:50:51,275 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\picam\picam.py
+2024-10-01 19:50:51,280 - INFO - Processing File: C:\Users\kroy2\Documents\python\Db3A backup\picam\picam_still_vid.py
+2024-10-01 19:50:51,282 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects
+2024-10-01 19:50:51,284 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects\json_processor
+2024-10-01 19:50:51,285 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects\json_processor\.vscode
+2024-10-01 19:50:51,286 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\.vscode\launch.json
+2024-10-01 19:50:51,287 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects\json_processor\data
+2024-10-01 19:50:51,288 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\12345.json
+2024-10-01 19:50:51,289 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\67890.json
+2024-10-01 19:50:51,290 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs
+2024-10-01 19:50:51,291 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedCountry.csv
+2024-10-01 19:50:51,291 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedDocument.csv
+2024-10-01 19:50:51,292 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedIndividual.csv
+2024-10-01 19:50:51,293 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblAssociatedOrganization.csv
+2024-10-01 19:50:51,294 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblIndividual.csv
+2024-10-01 19:50:51,295 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\data\outputs\tblRemarks.csv
+2024-10-01 19:50:51,298 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\file_structure.log
+2024-10-01 19:50:51,301 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\JSON_Claude_AI_question.txt
+2024-10-01 19:50:51,302 - INFO - Processing Directory: C:\Users\kroy2\Documents\python\projects\json_processor\scripts
+2024-10-01 19:50:51,303 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\scripts\app.log
+2024-10-01 19:50:51,304 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\scripts\helloworld.py
+2024-10-01 19:50:51,305 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\scripts\process_json.py
+2024-10-01 19:50:51,306 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\scripts\process_json2.py
+2024-10-01 19:50:51,307 - INFO - Processing File: C:\Users\kroy2\Documents\python\projects\json_processor\scripts\recursive_directory_discovery.py
+2024-10-01 19:50:51,308 - INFO - Processing File: C:\Users\kroy2\Documents\python\Screenshot 2024-10-01 174717.png
+2024-10-01 19:50:51,314 - INFO - CSV file created at C:\Users\kroy2\Documents\directory_structure.csv
