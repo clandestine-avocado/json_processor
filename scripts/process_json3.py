@@ -101,6 +101,15 @@ def process_json_files(directory, dataframes):
 
 def process_json_data(data, fk_id, dataframes):
     # Process a single JSON object and add its data to the appropriate DataFrames
+    # 1. It starts with an empty dictionary for the main data, including the file ID (fkID).
+    # 2. It then goes through each key-value pair in the flattened JSON data:
+    #    a. If the key matches a column in the main DataFrame, it adds it to the main_data dict.
+    #    b. If the key matches a name of a separate DataFrame (for nested data):
+    #       - If the value is a list, it adds each item as a new row to that DataFrame.
+    #       - If the value is not a list, it adds it as a single new row to that DataFrame.
+    # 3. Finally, it adds the collected main_data as a new row to the main DataFrame.
+
+
     main_data = {'fkID': fk_id, 'classification': ''}
     for key, value in flatten_dict(data).items():
         sanitized_key = sanitize_field_name(key)
