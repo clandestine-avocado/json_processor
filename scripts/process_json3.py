@@ -77,6 +77,28 @@ def process_json_files(directory, dataframes):
         except Exception as e:
             logging.error(f"Error processing file {file_path}: {str(e)}")
 
+# def process_json_data(data, fk_id, dataframes):
+#     # Process a single JSON object and add its data to the appropriate DataFrames
+#     main_data = {'fkID': fk_id, 'classification': ''}
+#     for key, value in flatten_dict(data).items():
+#         sanitized_key = sanitize_field_name(key)
+#         if sanitized_key in dataframes['main'].columns:
+#             main_data[sanitized_key] = value
+#         elif sanitized_key in dataframes:
+#             if isinstance(value, list):
+#                 for item in value:
+#                     dataframes[sanitized_key] = dataframes[sanitized_key].append(
+#                         {'fkID': fk_id, 'value': item, 'classification': ''}, 
+#                         ignore_index=True
+#                     )
+#             else:
+#                 dataframes[sanitized_key] = dataframes[sanitized_key].append(
+#                     {'fkID': fk_id, 'value': value, 'classification': ''}, 
+#                     ignore_index=True
+#                 )
+#     dataframes['main'] = dataframes['main'].append(main_data, ignore_index=True)
+
+
 def process_json_data(data, fk_id, dataframes):
     # Process a single JSON object and add its data to the appropriate DataFrames
     main_data = {'fkID': fk_id, 'classification': ''}
@@ -86,17 +108,24 @@ def process_json_data(data, fk_id, dataframes):
             main_data[sanitized_key] = value
         elif sanitized_key in dataframes:
             if isinstance(value, list):
-                for item in value:
-                    dataframes[sanitized_key] = dataframes[sanitized_key].append(
-                        {'fkID': fk_id, 'value': item, 'classification': ''}, 
-                        ignore_index=True
-                    )
+                new_rows = pd.DataFrame({
+                    'fkID': [fk_id] * len(value),
+                    'value': value,
+                    'classification': [''] * len(value)
+                })
+                dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_rows], ignore_index=True)
             else:
-                dataframes[sanitized_key] = dataframes[sanitized_key].append(
-                    {'fkID': fk_id, 'value': value, 'classification': ''}, 
-                    ignore_index=True
-                )
-    dataframes['main'] = dataframes['main'].append(main_data, ignore_index=True)
+                new_row = pd.DataFrame({
+                    'fkID': [fk_id],
+                    'value': [value],
+                    'classification': ['']
+                })
+                dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_row], ignore_index=True)
+    
+    new_main_row = pd.DataFrame([main_data])
+    dataframes['main'] = pd.concat([dataframes['main'], new_main_row], ignore_index=True)
+
+
 
 def flatten_dict(d, parent_key='', sep='.'):
     # Flatten a nested dictionary
