@@ -55,14 +55,22 @@ def analyze_structure(data, main_fields, array_fields, prefix=''):
         for item in data:
             analyze_structure(item, main_fields, array_fields, prefix)
 
+
+
 def create_dataframes(main_fields, array_fields):
-    # Create DataFrames based on the analyzed structure
+    # Updated 10 OCT
+    # Create "main" DataFrame and add additional fields (fkID and classification)
     dataframes = {
         'main': pd.DataFrame(columns=list(main_fields) + ['fkID', 'classification'])
     }
+    # Create multiple, dynamically named DataFrames
+    # Based on discovered fields stored in array_fields    
     for field in array_fields:
         dataframes[field] = pd.DataFrame(columns=['fkID', 'value', 'classification'])
     return dataframes
+
+
+
 
 def process_json_files(directory, dataframes):
     # Process all JSON files and populate the DataFrames
@@ -99,41 +107,47 @@ def process_json_files(directory, dataframes):
 #     dataframes['main'] = dataframes['main'].append(main_data, ignore_index=True)
 
 
+
+
+
 def process_json_data(data, fk_id, dataframes):
-    # Process a single JSON object and add its data to the appropriate DataFrames
-    # 1. It starts with an empty dictionary for the main data, including the file ID (fkID).
-    # 2. It then goes through each key-value pair in the flattened JSON data:
-    #    a. If the key matches a column in the main DataFrame, it adds it to the main_data dict.
-    #    b. If the key matches a name of a separate DataFrame (for nested data):
-    #       - If the value is a list, it adds each item as a new row to that DataFrame.
-    #       - If the value is not a list, it adds it as a single new row to that DataFrame.
-    # 3. Finally, it adds the collected main_data as a new row to the main DataFrame.
-
-
     main_data = {'fkID': fk_id, 'classification': ''}
     for key, value in flatten_dict(data).items():
         sanitized_key = sanitize_field_name(key)
         if sanitized_key in dataframes['main'].columns:
             main_data[sanitized_key] = value
-        elif sanitized_key in dataframes:
+        else:
+            # Create a new DataFrame if it doesn't exist
+            if sanitized_key not in dataframes:
+                dataframes[sanitized_key] = pd.DataFrame(columns=['fkID', 'value', 'classification'])
+                logging.info(f"Created new DataFrame for field: {sanitized_key}")
+
+            # Process the value
             if isinstance(value, list):
                 new_rows = pd.DataFrame({
                     'fkID': [fk_id] * len(value),
                     'value': value,
                     'classification': [''] * len(value)
                 })
-                dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_rows], ignore_index=True)
             else:
-                new_row = pd.DataFrame({
+                new_rows = pd.DataFrame({
                     'fkID': [fk_id],
                     'value': [value],
                     'classification': ['']
                 })
-                dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_row], ignore_index=True)
-    
-    new_main_row = pd.DataFrame([main_data])
-    dataframes['main'] = pd.concat([dataframes['main'], new_main_row], ignore_index=True)
 
+            # Append new rows to the DataFrame
+            try:
+                dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_rows], ignore_index=True)
+            except Exception as e:
+                logging.error(f"Error processing field {sanitized_key}: {str(e)}")
+
+    # Add main data to the main DataFrame
+    try:
+        new_main_row = pd.DataFrame([main_data])
+        dataframes['main'] = pd.concat([dataframes['main'], new_main_row], ignore_index=True)
+    except Exception as e:
+        logging.error(f"Error adding data to main DataFrame: {str(e)}")
 
 
 def flatten_dict(d, parent_key='', sep='.'):
