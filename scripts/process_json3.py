@@ -58,11 +58,11 @@ def analyze_structure(data, main_fields, array_fields, prefix=''):
 
 
 def create_dataframes(main_fields, array_fields):
-    # Updated 10 OCT
     # Create "main" DataFrame and add additional fields (fkID and classification)
     dataframes = {
         'main': pd.DataFrame(columns=list(main_fields) + ['fkID', 'classification'])
     }
+
     # Create multiple, dynamically named DataFrames
     # Based on discovered fields stored in array_fields    
     for field in array_fields:
@@ -111,42 +111,55 @@ def process_json_files(directory, dataframes):
 
 
 def process_json_data(data, fk_id, dataframes):
+    # Initialize the main data dictionary with the foreign key ID and an empty classification
     main_data = {'fkID': fk_id, 'classification': ''}
+
+    # Iterate through each key-value pair in the flattened JSON data
     for key, value in flatten_dict(data).items():
+        # Sanitize the field name to ensure it's a valid DataFrame column name
         sanitized_key = sanitize_field_name(key)
+
+        # Check if the sanitized key is a column in the main DataFrame
         if sanitized_key in dataframes['main'].columns:
+            # If it is, add the value to the main_data dictionary
             main_data[sanitized_key] = value
         else:
-            # Create a new DataFrame if it doesn't exist
+            # If the key is not in the main DataFrame, it's a nested field
+            # Check if a DataFrame for this field already exists
             if sanitized_key not in dataframes:
+                # If not, create a new DataFrame for this field
                 dataframes[sanitized_key] = pd.DataFrame(columns=['fkID', 'value', 'classification'])
                 logging.info(f"Created new DataFrame for field: {sanitized_key}")
 
-            # Process the value
+            # Process the value, handling both list and non-list cases
             if isinstance(value, list):
+                # If the value is a list, create a row for each item in the list
                 new_rows = pd.DataFrame({
-                    'fkID': [fk_id] * len(value),
-                    'value': value,
-                    'classification': [''] * len(value)
+                    'fkID': [fk_id] * len(value),  # Repeat the fkID for each item
+                    'value': value,  # Use the list items as values
+                    'classification': [''] * len(value)  # Create empty classifications for each item
                 })
             else:
+                # If the value is not a list, create a single row
                 new_rows = pd.DataFrame({
                     'fkID': [fk_id],
                     'value': [value],
-                    'classification': ['']
+                    'classification': ['']  # Single empty classification
                 })
 
-            # Append new rows to the DataFrame
+            # Attempt to append the new rows to the appropriate DataFrame
             try:
                 dataframes[sanitized_key] = pd.concat([dataframes[sanitized_key], new_rows], ignore_index=True)
             except Exception as e:
+                # Log any errors that occur during the append operation
                 logging.error(f"Error processing field {sanitized_key}: {str(e)}")
 
-    # Add main data to the main DataFrame
+    # Attempt to add the main data to the main DataFrame
     try:
         new_main_row = pd.DataFrame([main_data])
         dataframes['main'] = pd.concat([dataframes['main'], new_main_row], ignore_index=True)
     except Exception as e:
+        # Log any errors that occur when adding data to the main DataFrame
         logging.error(f"Error adding data to main DataFrame: {str(e)}")
 
 
