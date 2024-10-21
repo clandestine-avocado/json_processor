@@ -22,29 +22,30 @@ def process_activities(csv_file):
         # Remove tabs
         value = re.sub(r'\t+', '', value)
         
-        # If value contains "N/A" after removing tabs, return original value (without tabs)
+        # If value contains "N/A" after removing tabs, return None for both columns
         if "N/A" in value:
-            return pd.Series({'ActivityType': None, 'value': value})
+            return pd.Series({'ActivityType': None, 'value': None})
         
         try:
-            # Split the value by colons
-            parts = value.split(':')
+            # Use regex to extract the activity type and value
+            match = re.search(r"'type':\s*'([^']*)'.*'activity':\s*'([^']*)'", value)
             
-            # Ensure we have at least 3 parts
-            if len(parts) < 3:
-                return pd.Series({'ActivityType': None, 'value': value})
-            
-            # Extract ActivityType (3rd section)
-            activity_type = parts[1].strip().strip("'").strip('"')
-            
-            # Extract new value (everything after the 2nd colon)
-            new_value = ':'.join(parts[2:]).strip().strip("'").strip('"')
-            
-            return pd.Series({'ActivityType': activity_type, 'value': new_value})
+            if match:
+                activity_type = match.group(1).strip()
+                new_value = match.group(2).strip()
+                
+                # If activity_type is empty, return None for both columns
+                if not activity_type:
+                    return pd.Series({'ActivityType': None, 'value': None})
+                
+                return pd.Series({'ActivityType': activity_type, 'value': new_value})
+            else:
+                # If the pattern doesn't match, return None for both columns
+                return pd.Series({'ActivityType': None, 'value': None})
         
         except Exception:
-            # If any error occurs during processing, return original value
-            return pd.Series({'ActivityType': None, 'value': value})
+            # If any error occurs during processing, return None for both columns
+            return pd.Series({'ActivityType': None, 'value': None})
     
     # Apply the processing function to the 'value' column
     processed = df['value'].apply(process_value)
@@ -53,7 +54,7 @@ def process_activities(csv_file):
     df['ActivityType'] = processed['ActivityType']
     df['value'] = processed['value']
     
-    # Drop rows where ActivityType is None (indicating no processing occurred)
+    # Drop rows where ActivityType is None (indicating no processing occurred or N/A was found)
     df = df.dropna(subset=['ActivityType'])
     
     # Generate output filename
